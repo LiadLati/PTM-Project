@@ -1,4 +1,4 @@
-package Graph;
+package test;
 
 
 import java.util.Collection;
@@ -34,5 +34,5 @@ public class TopicManagerSingleton {
         return TopicManager.instance;
     }
 
-    
+
 }

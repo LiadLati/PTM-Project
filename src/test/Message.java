@@ -1,4 +1,4 @@
-package Graph;
+package test;
 
 import java.util.Date;
 
@@ -15,13 +15,16 @@ public class Message {
         this.asDouble = tryparse(asText);
         this.date = new Date();
     }
-    public Message(String text) {
+    public Message(String text)
+    {
         this(text.getBytes());
     }
-    public Message(double number) {
+    public Message(double number)
+    {
         this(Double.toString(number));
     }
-    public Double tryparse(String text) {
+    public Double tryparse(String text)
+    {
         try {
             return Double.parseDouble(text);
         }
