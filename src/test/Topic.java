@@ -1,4 +1,4 @@
-package Graph;
+package test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,13 +6,15 @@ import java.util.List;
 public class Topic{
 
     public final String name;
-    private List<Agent> subs;
-    private List<Agent> pubs;
+    public List<Agent> subs = new ArrayList<>();
+    public List<Agent> pubs = new ArrayList<>();
+    public Message Message;
 
     Topic(String name){
         this.name=name;
-        this.subs = new ArrayList<>();
-        this.pubs = new ArrayList<>();
+    }
+    public Message getMsg(){
+        return Message;
     }
 
     public void subscribe(Agent a){
@@ -27,6 +29,7 @@ public class Topic{
      }
 
     public void publish(Message m){
+        Message = m;
         for(Agent a : subs){
             a.callback(this.name,m);
         }
@@ -57,3 +60,4 @@ public class Topic{
 
 
 }
+
