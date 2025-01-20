@@ -1,4 +1,4 @@
-package test;
+package configs;
 
 public interface Agent {
     String getName();

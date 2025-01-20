@@ -1,8 +1,8 @@
-package test;
+package configs;
 
 import java.util.*;
 
-import test.TopicManagerSingleton.TopicManager;
+import configs.TopicManagerSingleton.TopicManager;
 
 public class Graph extends ArrayList<Node> {
     private HashMap<String, Node> nodesMap;
