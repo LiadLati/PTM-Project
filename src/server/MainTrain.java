@@ -1,4 +1,4 @@
-package test;
+package server;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -46,7 +46,7 @@ public class MainTrain {// RequestParser
             // Test parameters
             Map<String, String> expectedParams = new HashMap<>();
             expectedParams.put("id", "123");
-            expectedParams.put("name", "test");
+            expectedParams.put("name", "server");
             expectedParams.put("filename","\"hello_world.txt\"");
             if (!requestInfo.getParameters().equals(expectedParams)) {
                 System.out.println("Parameters test failed (-5)");
