@@ -1,4 +1,4 @@
-package test;
+package server;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -75,7 +75,7 @@ public class RequestParser {
                 }
             }
         }
-        
+
 
         if (contentLength > 0 && contentBuilder.length() > 0) {
             String contentString = contentBuilder.toString();
